@@ -1,0 +1,62 @@
+body {
+    margin: 0px !important;
+}
+
+.header {
+  background-color: #00B7EB;
+  text-align: center;
+  /*width: 100%;*/
+  /* padding: 100px; */
+}
+
+.hero {
+    background-color: #FF0000;
+    text-align: center;
+    /* padding: 100px; */
+    /*width: 100%;*/
+    flex: center;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    /*width: auto;
+    
+    justify-content: center;
+    flex-grow: 1;*/
+}
+.content {
+    background-color: #00FF00;
+    /*width: 100%;*/
+    /* padding: 100px; */
+    flex: 50%;
+}
+.sidebar {
+    background-color: #800080;
+    /*width: 100%;*/
+    /* padding: 100px; */
+    flex: 50%;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 640px) {
+  .column {
+      flex-grow: 2;
+      /*div.content*/
+    /*width: 100%;*/
+  }
+   .container {
+       display: flex;
+       text-align: center;
+       flex-direction: column;
+          
+   }
+}
+
+.footer {
+  background-color: #444444;
+  text-align: center;
+  /*width: 100%;*/
+  /* padding: 100px; */
+}
